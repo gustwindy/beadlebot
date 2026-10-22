@@ -1,0 +1,8 @@
+.env
+drawings
+beas
+*.tar
+*.png
+whohowmany
+test.py
+__pycache__
