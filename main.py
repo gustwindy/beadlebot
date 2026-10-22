@@ -118,7 +118,7 @@ async def list_artists(ctx: nextcord.Interaction):
 
     update_cache()
     _ = await ctx.send(
-        content=f"## artists\n```{'\n'.join([i['commonName'] for i in artists])}```"
+        content=f"## artists\n```{'\n'.join([f'{i["id"]}: {i['commonName']}' for i in artists])}```"
     )
 
 
